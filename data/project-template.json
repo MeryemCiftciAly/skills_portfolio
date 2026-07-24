@@ -1,0 +1,308 @@
+{
+  "_readme": "This file is a maintenance reference only. It does NOT appear on the website. Copy entries from this file into projects.json to create new projects. Set 'active' to true when you are ready to publish. See PORTFOLIO-MAINTENANCE-GUIDE.md for step-by-step instructions.",
+
+  "validValues": {
+    "status":  ["completed", "in-progress", "planned", "archived"],
+    "hubs":    ["tableau", "powerbi", "python", "colab", "sql", "excel", "access", "powerpoint", "google-colab", "general", "ai"],
+    "linkKind": ["dashboard", "github", "docs", "colab", "kaggle", "external", "download", "pdf", "tableau"]
+  },
+
+  "hubDisplayLimits": {
+    "_note": "These limits are informational only. The live limits are set in src/pages/SkillHub.tsx → HUB_DISPLAY_LIMITS.",
+    "google-colab": 8,
+    "excel":        8,
+    "access":       8,
+    "powerbi":      10,
+    "tableau":      10,
+    "powerpoint":   4
+  },
+
+  "minimalTemplate": {
+    "id":           "your-unique-id",
+    "slug":         "your-unique-slug",
+    "title":        "Project Title",
+    "objective":    "One or two sentences describing what this project does and why.",
+    "status":       "completed",
+    "active":       false,
+    "featured":     false,
+    "displayOrder": 999,
+    "hubs":         ["tableau"],
+    "categories":   [],
+    "tools":        [],
+    "skills":       [],
+    "image":        "",
+    "imageAlt":     "",
+    "links":        []
+  },
+
+  "fullTemplate": {
+    "id":           "your-unique-id",
+    "slug":         "your-unique-slug",
+    "title":        "Project Title",
+    "subtitle":     "Optional one-line subtitle shown under the title",
+    "objective":    "One or two sentences describing what this project does and why.",
+    "projectType":  "Skills Demonstration",
+    "status":       "completed",
+    "active":       false,
+    "featured":     false,
+    "displayOrder": 999,
+    "hubs":         ["tableau"],
+    "categories":   [],
+    "tools":        [],
+    "skills":       [],
+    "image":        "projects/tableau/your-project-name/cover.png",
+    "imageAlt":     "Description of the screenshot for screen readers",
+    "dataContext":  "Optional: describe the dataset or source used.",
+    "features":     [],
+    "featuresLabel": "Key Dashboard Features",
+    "links": [
+      { "kind": "dashboard", "label": "View Dashboard", "url": "https://..." },
+      { "kind": "github",    "label": "View on GitHub",  "url": "https://github.com/..." },
+      { "kind": "docs",      "label": "View Documentation", "url": "https://..." }
+    ]
+  },
+
+  "inactiveTemplates": {
+    "_note": "Copy any of these into projects.json when you are ready to start a new project. Change 'active' to true when you are ready to publish.",
+
+    "tableau": [
+      {
+        "id": "tableau-project-06", "slug": "tableau-project-06", "title": "Tableau Project",
+        "objective": "Add objective here.", "status": "planned", "active": false, "featured": false,
+        "displayOrder": 160, "hubs": ["tableau"], "categories": [], "tools": ["Tableau"], "skills": [],
+        "image": "", "imageAlt": "", "links": []
+      },
+      {
+        "id": "tableau-project-07", "slug": "tableau-project-07", "title": "Tableau Project",
+        "objective": "Add objective here.", "status": "planned", "active": false, "featured": false,
+        "displayOrder": 170, "hubs": ["tableau"], "categories": [], "tools": ["Tableau"], "skills": [],
+        "image": "", "imageAlt": "", "links": []
+      },
+      {
+        "id": "tableau-project-08", "slug": "tableau-project-08", "title": "Tableau Project",
+        "objective": "Add objective here.", "status": "planned", "active": false, "featured": false,
+        "displayOrder": 180, "hubs": ["tableau"], "categories": [], "tools": ["Tableau"], "skills": [],
+        "image": "", "imageAlt": "", "links": []
+      },
+      {
+        "id": "tableau-project-09", "slug": "tableau-project-09", "title": "Tableau Project",
+        "objective": "Add objective here.", "status": "planned", "active": false, "featured": false,
+        "displayOrder": 190, "hubs": ["tableau"], "categories": [], "tools": ["Tableau"], "skills": [],
+        "image": "", "imageAlt": "", "links": []
+      },
+      {
+        "id": "tableau-project-10", "slug": "tableau-project-10", "title": "Tableau Project",
+        "objective": "Add objective here.", "status": "planned", "active": false, "featured": false,
+        "displayOrder": 200, "hubs": ["tableau"], "categories": [], "tools": ["Tableau"], "skills": [],
+        "image": "", "imageAlt": "", "links": []
+      }
+    ],
+
+    "powerbi": [
+      {
+        "id": "powerbi-project-05", "slug": "powerbi-project-05", "title": "Power BI Dashboard",
+        "objective": "Add objective here.", "status": "planned", "active": false, "featured": false,
+        "displayOrder": 210, "hubs": ["powerbi"], "categories": [], "tools": ["Power BI"], "skills": [],
+        "image": "", "imageAlt": "", "links": []
+      },
+      {
+        "id": "powerbi-project-06", "slug": "powerbi-project-06", "title": "Power BI Dashboard",
+        "objective": "Add objective here.", "status": "planned", "active": false, "featured": false,
+        "displayOrder": 220, "hubs": ["powerbi"], "categories": [], "tools": ["Power BI"], "skills": [],
+        "image": "", "imageAlt": "", "links": []
+      },
+      {
+        "id": "powerbi-project-07", "slug": "powerbi-project-07", "title": "Power BI Dashboard",
+        "objective": "Add objective here.", "status": "planned", "active": false, "featured": false,
+        "displayOrder": 230, "hubs": ["powerbi"], "categories": [], "tools": ["Power BI"], "skills": [],
+        "image": "", "imageAlt": "", "links": []
+      },
+      {
+        "id": "powerbi-project-08", "slug": "powerbi-project-08", "title": "Power BI Dashboard",
+        "objective": "Add objective here.", "status": "planned", "active": false, "featured": false,
+        "displayOrder": 240, "hubs": ["powerbi"], "categories": [], "tools": ["Power BI"], "skills": [],
+        "image": "", "imageAlt": "", "links": []
+      },
+      {
+        "id": "powerbi-project-09", "slug": "powerbi-project-09", "title": "Power BI Dashboard",
+        "objective": "Add objective here.", "status": "planned", "active": false, "featured": false,
+        "displayOrder": 250, "hubs": ["powerbi"], "categories": [], "tools": ["Power BI"], "skills": [],
+        "image": "", "imageAlt": "", "links": []
+      },
+      {
+        "id": "powerbi-project-10", "slug": "powerbi-project-10", "title": "Power BI Dashboard",
+        "objective": "Add objective here.", "status": "planned", "active": false, "featured": false,
+        "displayOrder": 260, "hubs": ["powerbi"], "categories": [], "tools": ["Power BI"], "skills": [],
+        "image": "", "imageAlt": "", "links": []
+      }
+    ],
+
+    "colab": [
+      {
+        "id": "colab-project-03", "slug": "colab-project-03", "title": "Google Colab Notebook",
+        "subtitle": "Add subtitle here.",
+        "objective": "Add objective here.", "status": "planned", "active": false, "featured": false,
+        "displayOrder": 270, "hubs": ["python", "colab"], "categories": [], "tools": ["Python", "Google Colab"], "skills": [],
+        "image": "", "imageAlt": "",
+        "links": [{ "kind": "colab", "label": "Open Notebook in Google Colab", "url": "https://colab.research.google.com/drive/..." }]
+      },
+      {
+        "id": "colab-project-04", "slug": "colab-project-04", "title": "Google Colab Notebook",
+        "subtitle": "Add subtitle here.",
+        "objective": "Add objective here.", "status": "planned", "active": false, "featured": false,
+        "displayOrder": 280, "hubs": ["python", "colab"], "categories": [], "tools": ["Python", "Google Colab"], "skills": [],
+        "image": "", "imageAlt": "",
+        "links": [{ "kind": "colab", "label": "Open Notebook in Google Colab", "url": "https://colab.research.google.com/drive/..." }]
+      },
+      {
+        "id": "colab-project-05", "slug": "colab-project-05", "title": "Google Colab Notebook",
+        "subtitle": "Add subtitle here.",
+        "objective": "Add objective here.", "status": "planned", "active": false, "featured": false,
+        "displayOrder": 290, "hubs": ["python", "colab"], "categories": [], "tools": ["Python", "Google Colab"], "skills": [],
+        "image": "", "imageAlt": "",
+        "links": [{ "kind": "colab", "label": "Open Notebook in Google Colab", "url": "https://colab.research.google.com/drive/..." }]
+      },
+      {
+        "id": "colab-project-06", "slug": "colab-project-06", "title": "Google Colab Notebook",
+        "subtitle": "Add subtitle here.",
+        "objective": "Add objective here.", "status": "planned", "active": false, "featured": false,
+        "displayOrder": 300, "hubs": ["python", "colab"], "categories": [], "tools": ["Python", "Google Colab"], "skills": [],
+        "image": "", "imageAlt": "",
+        "links": [{ "kind": "colab", "label": "Open Notebook in Google Colab", "url": "https://colab.research.google.com/drive/..." }]
+      },
+      {
+        "id": "colab-project-07", "slug": "colab-project-07", "title": "Google Colab Notebook",
+        "subtitle": "Add subtitle here.",
+        "objective": "Add objective here.", "status": "planned", "active": false, "featured": false,
+        "displayOrder": 310, "hubs": ["python", "colab"], "categories": [], "tools": ["Python", "Google Colab"], "skills": [],
+        "image": "", "imageAlt": "",
+        "links": [{ "kind": "colab", "label": "Open Notebook in Google Colab", "url": "https://colab.research.google.com/drive/..." }]
+      },
+      {
+        "id": "colab-project-08", "slug": "colab-project-08", "title": "Google Colab Notebook",
+        "subtitle": "Add subtitle here.",
+        "objective": "Add objective here.", "status": "planned", "active": false, "featured": false,
+        "displayOrder": 320, "hubs": ["python", "colab"], "categories": [], "tools": ["Python", "Google Colab"], "skills": [],
+        "image": "", "imageAlt": "",
+        "links": [{ "kind": "colab", "label": "Open Notebook in Google Colab", "url": "https://colab.research.google.com/drive/..." }]
+      }
+    ],
+
+    "excel": [
+      {
+        "id": "excel-project-01", "slug": "excel-project-01", "title": "Excel Project",
+        "objective": "Add objective here.", "status": "planned", "active": false, "featured": false,
+        "displayOrder": 330, "hubs": ["excel"], "categories": [], "tools": ["Microsoft Excel"], "skills": [],
+        "image": "", "imageAlt": "", "links": []
+      },
+      {
+        "id": "excel-project-02", "slug": "excel-project-02", "title": "Excel Project",
+        "objective": "Add objective here.", "status": "planned", "active": false, "featured": false,
+        "displayOrder": 340, "hubs": ["excel"], "categories": [], "tools": ["Microsoft Excel"], "skills": [],
+        "image": "", "imageAlt": "", "links": []
+      },
+      {
+        "id": "excel-project-03", "slug": "excel-project-03", "title": "Excel Project",
+        "objective": "Add objective here.", "status": "planned", "active": false, "featured": false,
+        "displayOrder": 350, "hubs": ["excel"], "categories": [], "tools": ["Microsoft Excel"], "skills": [],
+        "image": "", "imageAlt": "", "links": []
+      },
+      {
+        "id": "excel-project-04", "slug": "excel-project-04", "title": "Excel Project",
+        "objective": "Add objective here.", "status": "planned", "active": false, "featured": false,
+        "displayOrder": 360, "hubs": ["excel"], "categories": [], "tools": ["Microsoft Excel"], "skills": [],
+        "image": "", "imageAlt": "", "links": []
+      },
+      {
+        "id": "excel-project-05", "slug": "excel-project-05", "title": "Excel Project",
+        "objective": "Add objective here.", "status": "planned", "active": false, "featured": false,
+        "displayOrder": 370, "hubs": ["excel"], "categories": [], "tools": ["Microsoft Excel"], "skills": [],
+        "image": "", "imageAlt": "", "links": []
+      },
+      {
+        "id": "excel-project-06", "slug": "excel-project-06", "title": "Excel Project",
+        "objective": "Add objective here.", "status": "planned", "active": false, "featured": false,
+        "displayOrder": 380, "hubs": ["excel"], "categories": [], "tools": ["Microsoft Excel"], "skills": [],
+        "image": "", "imageAlt": "", "links": []
+      },
+      {
+        "id": "excel-project-07", "slug": "excel-project-07", "title": "Excel Project",
+        "objective": "Add objective here.", "status": "planned", "active": false, "featured": false,
+        "displayOrder": 390, "hubs": ["excel"], "categories": [], "tools": ["Microsoft Excel"], "skills": [],
+        "image": "", "imageAlt": "", "links": []
+      },
+      {
+        "id": "excel-project-08", "slug": "excel-project-08", "title": "Excel Project",
+        "objective": "Add objective here.", "status": "planned", "active": false, "featured": false,
+        "displayOrder": 400, "hubs": ["excel"], "categories": [], "tools": ["Microsoft Excel"], "skills": [],
+        "image": "", "imageAlt": "", "links": []
+      }
+    ],
+
+    "access": [
+      {
+        "id": "access-project-02", "slug": "access-project-02", "title": "Microsoft Access Database",
+        "objective": "Add objective here.", "status": "planned", "active": false, "featured": false,
+        "displayOrder": 410, "hubs": ["access"], "categories": [], "tools": ["Microsoft Access"], "skills": [],
+        "image": "", "imageAlt": "", "links": []
+      },
+      {
+        "id": "access-project-03", "slug": "access-project-03", "title": "Microsoft Access Database",
+        "objective": "Add objective here.", "status": "planned", "active": false, "featured": false,
+        "displayOrder": 420, "hubs": ["access"], "categories": [], "tools": ["Microsoft Access"], "skills": [],
+        "image": "", "imageAlt": "", "links": []
+      },
+      {
+        "id": "access-project-04", "slug": "access-project-04", "title": "Microsoft Access Database",
+        "objective": "Add objective here.", "status": "planned", "active": false, "featured": false,
+        "displayOrder": 430, "hubs": ["access"], "categories": [], "tools": ["Microsoft Access"], "skills": [],
+        "image": "", "imageAlt": "", "links": []
+      },
+      {
+        "id": "access-project-05", "slug": "access-project-05", "title": "Microsoft Access Database",
+        "objective": "Add objective here.", "status": "planned", "active": false, "featured": false,
+        "displayOrder": 440, "hubs": ["access"], "categories": [], "tools": ["Microsoft Access"], "skills": [],
+        "image": "", "imageAlt": "", "links": []
+      },
+      {
+        "id": "access-project-06", "slug": "access-project-06", "title": "Microsoft Access Database",
+        "objective": "Add objective here.", "status": "planned", "active": false, "featured": false,
+        "displayOrder": 450, "hubs": ["access"], "categories": [], "tools": ["Microsoft Access"], "skills": [],
+        "image": "", "imageAlt": "", "links": []
+      },
+      {
+        "id": "access-project-07", "slug": "access-project-07", "title": "Microsoft Access Database",
+        "objective": "Add objective here.", "status": "planned", "active": false, "featured": false,
+        "displayOrder": 460, "hubs": ["access"], "categories": [], "tools": ["Microsoft Access"], "skills": [],
+        "image": "", "imageAlt": "", "links": []
+      },
+      {
+        "id": "access-project-08", "slug": "access-project-08", "title": "Microsoft Access Database",
+        "objective": "Add objective here.", "status": "planned", "active": false, "featured": false,
+        "displayOrder": 470, "hubs": ["access"], "categories": [], "tools": ["Microsoft Access"], "skills": [],
+        "image": "", "imageAlt": "", "links": []
+      }
+    ],
+
+    "powerpoint": [
+      {
+        "id": "powerpoint-project-02", "slug": "powerpoint-project-02", "title": "Presentation Project",
+        "objective": "Add objective here.", "status": "planned", "active": false, "featured": false,
+        "displayOrder": 480, "hubs": ["powerpoint"], "categories": [], "tools": ["PowerPoint"], "skills": [],
+        "image": "", "imageAlt": "", "links": []
+      },
+      {
+        "id": "powerpoint-project-03", "slug": "powerpoint-project-03", "title": "Presentation Project",
+        "objective": "Add objective here.", "status": "planned", "active": false, "featured": false,
+        "displayOrder": 490, "hubs": ["powerpoint"], "categories": [], "tools": ["PowerPoint"], "skills": [],
+        "image": "", "imageAlt": "", "links": []
+      },
+      {
+        "id": "powerpoint-project-04", "slug": "powerpoint-project-04", "title": "Presentation Project",
+        "objective": "Add objective here.", "status": "planned", "active": false, "featured": false,
+        "displayOrder": 500, "hubs": ["powerpoint"], "categories": [], "tools": ["PowerPoint"], "skills": [],
+        "image": "", "imageAlt": "", "links": []
+      }
+    ]
+  }
+}
