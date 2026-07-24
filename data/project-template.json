@@ -18,6 +18,7 @@
   },
 
   "minimalTemplate": {
+    "_note": "Minimum required fields. Copy into projects.json and set 'active' to true when ready.",
     "id":           "your-unique-id",
     "slug":         "your-unique-slug",
     "title":        "Project Title",
@@ -26,7 +27,7 @@
     "active":       false,
     "featured":     false,
     "displayOrder": 999,
-    "hubs":         ["tableau"],
+    "hubs":         ["general"],
     "categories":   [],
     "tools":        [],
     "skills":       [],
@@ -36,29 +37,128 @@
   },
 
   "fullTemplate": {
+    "_note": "All available fields. Copy into projects.json and set 'active' to true when ready.",
     "id":           "your-unique-id",
     "slug":         "your-unique-slug",
     "title":        "Project Title",
     "subtitle":     "Optional one-line subtitle shown under the title",
     "objective":    "One or two sentences describing what this project does and why.",
+    "description":  "Optional longer description providing more context about the project approach and findings.",
     "projectType":  "Skills Demonstration",
     "status":       "completed",
     "active":       false,
     "featured":     false,
     "displayOrder": 999,
-    "hubs":         ["tableau"],
-    "categories":   [],
-    "tools":        [],
-    "skills":       [],
-    "image":        "projects/tableau/your-project-name/cover.png",
+    "hubs":         ["general"],
+    "categories":   ["Data Cleaning"],
+    "tools":        ["Microsoft Excel"],
+    "skills":       ["Power Query", "Data Validation"],
+    "image":        "projects/general/your-project-name/cover.png",
     "imageAlt":     "Description of the screenshot for screen readers",
     "dataContext":  "Optional: describe the dataset or source used.",
-    "features":     [],
-    "featuresLabel": "Key Dashboard Features",
+    "features":     ["Feature 1", "Feature 2"],
+    "featuresLabel": "What This Project Covers",
     "links": [
-      { "kind": "dashboard", "label": "View Dashboard", "url": "https://..." },
-      { "kind": "github",    "label": "View on GitHub",  "url": "https://github.com/..." },
-      { "kind": "docs",      "label": "View Documentation", "url": "https://..." }
+      { "kind": "external",  "label": "View Project",          "url": "https://..." },
+      { "kind": "github",    "label": "View on GitHub",        "url": "https://github.com/..." },
+      { "kind": "docs",      "label": "View Documentation",    "url": "https://..." },
+      { "kind": "pdf",       "label": "Download Report (PDF)", "url": "https://..." }
+    ]
+  },
+
+  "generalProjectExample": {
+    "_note": "Example of a General Projects entry. Copy into projects.json and set 'active' to true when ready.",
+    "id":           "general-sales-reconciliation",
+    "slug":         "general-sales-reconciliation",
+    "title":        "Monthly Sales Reconciliation",
+    "subtitle":     "Automated multi-source reconciliation for regional sales reporting",
+    "objective":    "Reconciled monthly sales data from three regional systems to identify discrepancies and produce a single consolidated report for finance review.",
+    "description":  "Built using Power Query to merge data from three sources, applied conditional logic to flag mismatches greater than 5%, and produced a summary table ready for stakeholder review.",
+    "projectType":  "Skills Demonstration",
+    "status":       "completed",
+    "active":       false,
+    "featured":     false,
+    "displayOrder": 510,
+    "hubs":         ["general"],
+    "categories":   ["Reporting & Analysis", "Business Operations"],
+    "tools":        ["Microsoft Excel", "Power Query"],
+    "skills":       ["Data reconciliation", "Conditional formatting", "Data validation", "Stakeholder reporting"],
+    "image":        "projects/general/sales-reconciliation/cover.png",
+    "imageAlt":     "Excel workbook showing reconciled sales figures across three regional sources with discrepancy flags",
+    "links": [
+      { "kind": "github",   "label": "View on GitHub",     "url": "https://github.com/MeryemCiftciAly/..." },
+      { "kind": "external", "label": "View Project",       "url": "https://..." }
+    ]
+  },
+
+  "multiHubExample": {
+    "_note": "Example of a project assigned to multiple hubs. It appears in both hubs without creating two records. Copy into projects.json and set 'active' to true when ready.",
+    "id":           "excel-general-budget-analysis",
+    "slug":         "excel-general-budget-analysis",
+    "title":        "Departmental Budget Analysis",
+    "subtitle":     "Excel-based budget tracking with variance analysis",
+    "objective":    "Built an Excel workbook to track actual departmental spend against approved budgets, calculating variance by month and quarter.",
+    "status":       "completed",
+    "active":       false,
+    "featured":     false,
+    "displayOrder": 520,
+    "hubs":         ["excel", "general"],
+    "categories":   ["Reporting & Analysis", "Business Operations"],
+    "tools":        ["Microsoft Excel", "Power Query"],
+    "skills":       ["PivotTables", "Variance analysis", "Conditional formatting", "Budget tracking"],
+    "image":        "projects/excel/budget-analysis/cover.png",
+    "imageAlt":     "Excel budget tracker showing monthly actuals vs budget with variance column",
+    "links": [
+      { "kind": "github", "label": "View on GitHub", "url": "https://github.com/MeryemCiftciAly/..." }
+    ]
+  },
+
+  "multiLinkExample": {
+    "_note": "Example of a project with several link types. Only links with a URL will be displayed. Copy into projects.json and set 'active' to true when ready.",
+    "id":           "sql-general-inventory-audit",
+    "slug":         "sql-general-inventory-audit",
+    "title":        "Inventory Audit — SQL Analysis",
+    "subtitle":     "PostgreSQL queries to audit stock levels and flag discrepancies",
+    "objective":    "Wrote SQL queries against a PostgreSQL inventory database to identify stock discrepancies, flag zero-movement SKUs, and produce a reorder priority report.",
+    "status":       "completed",
+    "active":       false,
+    "featured":     false,
+    "displayOrder": 530,
+    "hubs":         ["sql", "general"],
+    "categories":   ["Database Management", "Reporting & Analysis"],
+    "tools":        ["SQL", "PostgreSQL"],
+    "skills":       ["CTEs", "Window functions", "GROUP BY", "Data validation"],
+    "image":        "projects/general/inventory-audit/cover.png",
+    "imageAlt":     "SQL query output showing inventory discrepancies and reorder priority ranking",
+    "links": [
+      { "kind": "github",   "label": "View SQL on GitHub",          "url": "https://github.com/MeryemCiftciAly/..." },
+      { "kind": "kaggle",   "label": "View on Kaggle",              "url": "https://www.kaggle.com/..." },
+      { "kind": "docs",     "label": "View Documentation",          "url": "https://..." },
+      { "kind": "pdf",      "label": "Download Summary Report",     "url": "https://..." },
+      { "kind": "external", "label": "View Project",                "url": "https://..." }
+    ]
+  },
+
+  "toolsAndSkillsExample": {
+    "_note": "Example showing how to populate tools and skills tags in detail. Both fields accept any string — type new values directly without editing React. Copy into projects.json and set 'active' to true when ready.",
+    "id":           "python-data-quality-check",
+    "slug":         "python-data-quality-check",
+    "title":        "Data Quality Audit — Python",
+    "subtitle":     "Automated data quality checks using pandas and custom validation rules",
+    "objective":    "Developed a Python script to run automated quality checks on incoming datasets, flagging missing values, type mismatches, out-of-range figures, and duplicate records before downstream analysis.",
+    "status":       "completed",
+    "active":       false,
+    "featured":     false,
+    "displayOrder": 540,
+    "hubs":         ["python", "colab"],
+    "categories":   ["Data Cleaning", "Process Improvement", "Automation"],
+    "tools":        ["Python", "pandas", "Google Colab", "NumPy"],
+    "skills":       ["Missing value imputation", "Data type conversion", "Duplicate detection", "Validation rules", "Automated reporting"],
+    "image":        "projects/python/data-quality-check/cover.png",
+    "imageAlt":     "Python script output showing a data quality summary table with flagged rows per validation rule",
+    "links": [
+      { "kind": "colab",  "label": "Open Notebook in Google Colab", "url": "https://colab.research.google.com/drive/..." },
+      { "kind": "github", "label": "View on GitHub",                "url": "https://github.com/MeryemCiftciAly/..." }
     ]
   },
 
