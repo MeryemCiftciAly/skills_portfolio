@@ -382,7 +382,7 @@
     "subtitle": "Data cleaning and normalization of operational expense records",
     "objective": "Apply Python data cleaning techniques to normalize operational expense records, handling missing values, inconsistent formatting, and category standardization.",
     "projectType": "Skills Demonstration",
-    "status": "in-progress",
+    "status": "Completed",
     "active": true,
     "featured": false,
     "displayOrder": 130,
