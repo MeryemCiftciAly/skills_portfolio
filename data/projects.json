@@ -1,5 +1,42 @@
 [
   {
+    "id": "excel-business-performance-diagnostic",
+    "slug": "business-performance-diagnostic",
+    "title": "Business Performance Diagnostic",
+    "subtitle": "Online vs. Brick-and-Mortar Sales Across Global Markets",
+    "objective": "Compare online and physical-store revenue across customer markets using a published Google Sheets analysis.",
+    "question": "How is the retailer’s sales performance divided between brick-and-mortar and online channels across customer markets? Where are the differences in channel performance most significant?",
+    "navQuestion": "How do online and physical sales compare across customer markets?",
+    "status": "completed",
+    "active": true,
+    "featured": false,
+    "displayOrder": 5,
+    "hubs": ["excel"],
+    "categories": ["Business Analysis", "Spreadsheet Analysis"],
+    "tools": ["Google Sheets"],
+    "skills": ["Cross-tab relationships", "MAP + LAMBDA", "INDEX + MATCH", "XLOOKUP", "FILTER", "SUMIF", "IFNA", "Channel-share KPIs"],
+    "sheetUrl": "https://docs.google.com/spreadsheets/d/e/2PACX-1vRM5w6AZCOd0qHhvWer9STfO1blPyq-R86E328w4HauMQRlg1NvBWElBkjZlLCP2uuCVFZEaDOtzNmV/pubhtml?gid=2095477508&single=true&headers=false",
+    "embedUrl": "https://docs.google.com/spreadsheets/d/e/2PACX-1vRM5w6AZCOd0qHhvWer9STfO1blPyq-R86E328w4HauMQRlg1NvBWElBkjZlLCP2uuCVFZEaDOtzNmV/pubhtml?gid=2095477508&single=true&widget=true&headers=false",
+    "sourceUrl": "https://mavenanalytics.io/data-playground/global-electronics-retailer",
+    "summary": [
+      "The retailer recorded $55.76 million in USD sales across North America, Europe, and Australia. Brick-and-mortar stores generated 79.55% of total revenue, compared with 20.45% online. Physical stores led in every customer market, contributing between 77.51% and 80.62% of each continent’s sales.",
+      "North America generated the most revenue in both channels: $27.38 million in stores and $7.22 million online. Europe followed with $14.88 million in stores and $3.58 million online. Australia recorded the lowest revenue in both channels, at $2.10 million in stores and $0.61 million online. Yet Australia had the highest online share within its own market, at 22.49%, compared with 20.87% in North America and 19.38% in Europe. This distinction matters: Australia is the smallest market by revenue, but its sales are slightly more concentrated online.",
+      "The strong in-store share raises a useful business question about how customers choose to buy electronics. The data does not show why they choose a channel. Factors such as the ability to examine products in person, return policies, and the quality of online product information are possibilities to test, not conclusions from this analysis.",
+      "A practical next step is to compare which products sell through each channel within each market. That would help the retailer investigate whether product mix contributes to the revenue differences and could inform later decisions about store assortment, online fulfillment, and marketing."
+    ],
+    "insights": ["Physical stores lead revenue in all three customer markets.", "Australia has the highest within-market online share despite having the lowest total revenue."],
+    "businessUse": "Use the channel comparison to frame further investigation, not to infer why customers choose a channel.",
+    "nextStep": "Compare products sold through each channel within each market to investigate whether product mix contributes to revenue differences.",
+    "methodology": "Markets use the customer’s recorded Continent joined to sales by CustomerKey, not transaction currency or store location. Online sales have StoreKey = 0; physical stores have nonzero StoreKeys. Revenue USD = quantity × product unit price USD; USD prices are not converted again. Total Sales is online plus store revenue, and Online % of Sales is online revenue divided by that total.",
+    "links": [
+      {
+        "kind": "external",
+        "label": "Open analysis in Google Sheets",
+        "url": "https://docs.google.com/spreadsheets/d/e/2PACX-1vRM5w6AZCOd0qHhvWer9STfO1blPyq-R86E328w4HauMQRlg1NvBWElBkjZlLCP2uuCVFZEaDOtzNmV/pubhtml?gid=2095477508&single=true&headers=false"
+      }
+    ]
+  },
+  {
     "id": "tableau-financial-performance",
     "slug": "tableau-financial-performance",
     "title": "Financial Performance Dashboard",
@@ -382,7 +419,7 @@
     "subtitle": "Data cleaning and normalization of operational expense records",
     "objective": "Apply Python data cleaning techniques to normalize operational expense records, handling missing values, inconsistent formatting, and category standardization.",
     "projectType": "Skills Demonstration",
-    "status": "Completed",
+    "status": "in-progress",
     "active": true,
     "featured": false,
     "displayOrder": 130,
